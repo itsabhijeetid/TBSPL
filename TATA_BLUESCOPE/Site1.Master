@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="TATA_BLUESCOPE.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>TATA BLUESCOPE </title>
+
+    <%--Bootstrap CSS--%>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <%--Local CSS--%>
+    <link rel="stylesheet" href="style.css" />
+    <%--Bootstrap JS--%>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <nav>
+                <asp:LinkButton runat="server" ID="logo_linkbtn"><img src="images/logo.png" id ="logo"/></asp:LinkButton>
+                <asp:LinkButton runat="server" Style="color: transparent">.</asp:LinkButton>
+                <asp:LinkButton ID="logout" runat="server" CssClass="nav-element" Visible="True" OnClick="logout_Click">Logout</asp:LinkButton>
+                <asp:LinkButton runat="server" class="nav-element" ID="adminlogin" OnClick="adminlogin_Click">Admin Login</asp:LinkButton>
+                <asp:LinkButton runat="server" class="nav-element nav" ID="report">Report</asp:LinkButton>
+                <asp:LinkButton runat="server" class="nav-element nav" ID="files">Files</asp:LinkButton>
+
+            </nav>
+
+
+            <asp:ContentPlaceHolder ID="main" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <footer>
+                <marquee style="color: white">&copy; TATA BLUESCOPE.</marquee>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

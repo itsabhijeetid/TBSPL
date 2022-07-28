@@ -1,0 +1,43 @@
+﻿#logo {
+    width: 143px;
+    height: 62px;
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    border-radius: 20px;
+}
+
+.nav-element {
+    float: right;
+    margin-right: 4rem;
+    margin-top: 1rem;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    border-left: 9px solid #00ff13;
+    padding-left: 0.5rem;
+    height: 32px;
+    border-radius: 30%;
+}
+    .nav-element:hover {
+        color: blanchedalmond;
+    }
+.nav {
+    border: none;
+    text-decoration-line: revert;
+    text-decoration-color: white;
+}
+#logout {
+    color: red;
+    border-left: 0px;
+}
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 50%;
+        height: 3rem;
+        font-size: 12px;
+        margin-left: 25rem;
+    }
+
